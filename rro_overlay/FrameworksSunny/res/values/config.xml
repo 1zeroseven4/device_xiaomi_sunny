@@ -655,4 +655,7 @@
     <!-- Flag indicating whether the surfaceflinger has limited alpha compositing functionality in hardware -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
+    <!-- LineageHealth interface service -->
+    <bool name="config_supportsChargingControl">false</bool>
+
 </resources>
