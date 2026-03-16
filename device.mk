@@ -16,6 +16,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Inherit microG support
+WITH_MICROG ?= false
+ifeq ($(WITH_MICROG),true)
+    $(call inherit-product, vendor/microg/microg.mk)
+endif
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
