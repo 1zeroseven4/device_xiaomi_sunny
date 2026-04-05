@@ -477,3 +477,7 @@ PRODUCT_PACKAGES += \
 # Wlan
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
+
+# OTA
+PRODUCT_PACKAGES += \
+    Updater
